@@ -9,6 +9,7 @@
 from selenium import webdriver
 
 browser = webdriver.Ie()
-browser.get('https://pub.alimama.com/')
+url = "https://pub.alimama.com/report/getTbkPaymentDetails.json?startTime=2017-05-22&endTime=2017-08-19&payStatus=&queryType=1&toPage=1&perPageSize=20&total=&t=1503223605295&pvid=&_tb_token_=pTK7Mfldfvq&_input_charset=utf-8"
+browser.get(url)
 cookies = browser.get_cookies()
 print(cookies)
