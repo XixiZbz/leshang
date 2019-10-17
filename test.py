@@ -5,4 +5,10 @@
 # @Site    : 
 # @File    : test.py
 # @Software: PyCharm
-import selenium
+
+from selenium import webdriver
+
+browser = webdriver.Chrome()
+browser.get('https://pub.alimama.com/')
+cookies = browser.get_cookies()
+print(cookies)
