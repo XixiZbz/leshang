@@ -9,7 +9,7 @@
 from selenium import webdriver
 
 browser = webdriver.Ie()
-url = "https://pub.alimama.com/report/getTbkPaymentDetails.json?startTime=2017-05-22&endTime=2017-08-19&payStatus=&queryType=1&toPage=1&perPageSize=20&total=&t=1503223605295&pvid=&_tb_token_=pTK7Mfldfvq&_input_charset=utf-8"
+url = "https://login.taobao.com/member/login.jhtml?style=mini&newMini2=true&from=alimama&redirectURL=http%3A%2F%2Flogin.taobao.com%2Fmember%2Ftaobaoke%2Flogin.htm%3Fis_login%3d1&full_redirect=true"
 browser.get(url)
 cookies = browser.get_cookies()
 print(cookies)
