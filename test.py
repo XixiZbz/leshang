@@ -16,6 +16,7 @@ print(button)
 button.click()
 cookies = browser.get_cookies()
 print(cookies)
+browser.close()
 #
 # with open("./cookies.txt",'w') as f:
 #     f.write(cookies)
