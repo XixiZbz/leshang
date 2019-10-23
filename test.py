@@ -16,7 +16,7 @@ print(button)
 button.click()
 cookies = browser.get_cookies()
 browser.close()
-
+print(cookies)
 format_cookies_list = eval(cookies)
 format_cookies = {x["name"]:x["value"] for x in cookies}
 
