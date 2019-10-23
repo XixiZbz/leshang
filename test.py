@@ -28,6 +28,6 @@ format_cookies = {x["name"]:x["value"] for x in cookies}
 tb_token= format_cookies['_tb_token_']
 s = requests.session()
 s.cookies.update(format_cookies)
-url = "https://pub.alimama.com/report/getCPPaymentDetails.json?t=1571668389426&_tb_token_={tb_token}&startTime=2019-10-15&endTime=2019-10-21&payStatus=&queryType=1&toPage=1&perPageSize=40&positionIndex=&jumpType=0".format(tb_token)
+url = "https://pub.alimama.com/report/getCPPaymentDetails.json?t=1571668389426&_tb_token_={tb_token}&startTime=2019-10-15&endTime=2019-10-21&payStatus=&queryType=1&toPage=1&perPageSize=40&positionIndex=&jumpType=0".format(tb_token=tb_token)
 res = s.get(url)
 print(res.text)
